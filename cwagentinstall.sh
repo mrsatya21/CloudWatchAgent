@@ -76,7 +76,7 @@ then
         echo "This script is not supported on $PLATFORM"
     fi
 
-# For AMD64
+# For ARM64
 elif [[ $ARCH == "aarch64" ]]
 then
     # For SuSE Linux [suse]
