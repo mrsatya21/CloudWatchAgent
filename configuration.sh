@@ -14,12 +14,6 @@ configfunction(){
 				"InstanceId"
 			]
 		],
-		"append_dimensions": {
-			"AutoScalingGroupName": "${aws:AutoScalingGroupName}",
-			"ImageId": "${aws:ImageId}",
-			"InstanceId": "${aws:InstanceId}",
-			"InstanceType": "${aws:InstanceType}"
-		},
 		"metrics_collected": {
 			"cpu": {
 				"measurement": [
