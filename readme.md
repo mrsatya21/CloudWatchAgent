@@ -38,4 +38,14 @@ chmod u+x cwagentinstall.sh
 
 - If user want to change the configuration file of cloudwatch agent or set the configuration file using wizard, they can do so by following the steps below : 
 
-1. Before running the `cwagentinstall.sh` file make sure comment the line [42]() and [43]()
+1. Before executimg *(after downloading)* the **`cwagentinstall.sh`** file, make sure to comment the line [42](https://github.com/mrsatya21/CloudWatchAgent/blob/main/cwagentinstall.sh#L42) and [43](https://github.com/mrsatya21/CloudWatchAgent/blob/main/cwagentinstall.sh#L43). 
+
+2. Log in to your EC2 instane. 
+
+3. Run the command `sudo /opt/aws/amazon-cloudwatch-agent/bin/amazon-cloudwatch-agent-config-wizard`.
+
+4. Follow the prompt and answer few question and your configuration file will be ready.
+
+5. After that you can run the command `sudo /opt/aws/amazon-cloudwatch-agent/bin/amazon-cloudwatch-agent-ctl -a fetch-config -m ec2 -c file:/opt/aws/amazon-cloudwatch-agent/bin/config.json -s`.
+
+6. Bingo! You are all set now. 
