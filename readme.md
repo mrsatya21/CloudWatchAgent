@@ -14,7 +14,7 @@
 1. Please make sure that the EC2 instance(s) have `wget` package installed in it. 
 2. Please make sure that the EC2 instance have **[necessary permission](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/create-iam-roles-for-cloudwatch-agent-commandline.html)** attached to it.
 
-#### Download the script
+#### Download the script 
 
 ```sh 
 wget https://raw.githubusercontent.com/mrsatya21/CloudWatchAgent/main/configuration.sh
@@ -34,3 +34,8 @@ chmod u+x cwagentinstall.sh
 ./cwagentinstall.sh
 ```
 
+#### Note 
+
+- If user want to change the configuration file of cloudwatch agent or set the configuration file using wizard, they can do so by following the steps below : 
+
+1. Before running the `cwagentinstall.sh` file make sure comment the line [42]() and [43]()
