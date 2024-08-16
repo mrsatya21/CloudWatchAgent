@@ -44,8 +44,8 @@ chmod u+x cwagentinstall.sh
 
 3. Run the command `sudo /opt/aws/amazon-cloudwatch-agent/bin/amazon-cloudwatch-agent-config-wizard`.
 
-4. Follow the prompt and answer few question and your configuration file will be ready.
+4. Follow the prompt and answer few questions and your configuration file will be ready.
 
-5. After that you can run the command `sudo /opt/aws/amazon-cloudwatch-agent/bin/amazon-cloudwatch-agent-ctl -a fetch-config -m ec2 -c file:/opt/aws/amazon-cloudwatch-agent/bin/config.json -s`.
+5. After that you need to run the command *(to start the CloudWatch agent)* : `sudo /opt/aws/amazon-cloudwatch-agent/bin/amazon-cloudwatch-agent-ctl -a fetch-config -m ec2 -c file:/opt/aws/amazon-cloudwatch-agent/bin/config.json -s`.
 
 6. Bingo! You are all set now. 
