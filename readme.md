@@ -7,24 +7,25 @@
 > + The script is tested on the following architecture and only works on the following OS : 
 >
 >    > ```
->    > x86_64 : Amazon Linux 2, Amazon Linux 2023, SLES, RHEL, Debian, Ubuntu
->    > aarch64 : Amazon Linux 2, Amazon Linux 2023, SLES, RHEL, Ubuntu
+>    > x86_64 (amd64): Amazon Linux 2, Amazon Linux 2023, SLES, RHEL, Ubuntu, Debian
+>    > aarch64 (arm64): Amazon Linux 2, Amazon Linux 2023, SLES, RHEL, Ubuntu
 >    > ``` 
 
 #### Prerequisites
 
 > [!WARNING]
-> 
 >
-> 1. Please make sure that the EC2 instance(s) have `wget` package installed in it. 
-> 2. Please make sure that the EC2 instance(s) have **[necessary permission](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/create-iam-roles-for-cloudwatch-agent-commandline.html)** attached to it.
+> 1. Please make sure that the EC2 instance(s) have **[necessary permission](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/create-iam-roles-for-cloudwatch-agent-commandline.html)** attached to it.
 
 #### Download the script 
 
 ```sh 
-wget https://raw.githubusercontent.com/sattyagrah/CloudWatchAgent/main/configuration.sh
+wget "https://raw.githubusercontent.com/sattyagrah/CloudWatchAgent/main/configuration.sh"
+```
+or
 
-wget https://raw.githubusercontent.com/sattyagrah/CloudWatchAgent/main/cwagentinstall.sh
+```sh
+curl "https://raw.githubusercontent.com/sattyagrah/CloudWatchAgent/main/cwagentinstall.sh" -o "cwagentinstall.sh"
 ```
 
 #### Give executable permission
