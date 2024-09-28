@@ -20,9 +20,9 @@
 #### Download the script 
 
 ```sh 
-wget "https://raw.githubusercontent.com/sattyagrah/CloudWatchAgent/main/configuration.sh"
+curl "https://raw.githubusercontent.com/sattyagrah/CloudWatchAgent/main/configuration.sh" -o "configuration.sh"
 ```
-or
+and
 
 ```sh
 curl "https://raw.githubusercontent.com/sattyagrah/CloudWatchAgent/main/cwagentinstall.sh" -o "cwagentinstall.sh"
