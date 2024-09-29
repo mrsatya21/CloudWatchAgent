@@ -88,13 +88,13 @@ then
     # For Amazon Linux {2/2023} [amazon_linux]
     elif [[ $PLATFORM == "amzn" ]]
     then
-        NAME=$(cat /etc/amazon-linux-release-cpe | awk -F':' '{print $5}')
+        NAME="amazon_linux"
         cwafunction $NAME
 
     # For RHEL [redhat]
     elif [[ $PLATFORM == "rhel" ]]
     then
-        NAME=radhat
+        NAME="radhat"
         cwafunction $NAME
 
     # For Ubuntu [ubuntu]
