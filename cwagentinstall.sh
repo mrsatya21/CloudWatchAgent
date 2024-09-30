@@ -63,7 +63,7 @@ then
     # For RHEL [redhat]
     elif [[ $PLATFORM == "rhel" ]]
     then
-        NAME="radhat"
+        NAME="redhat"
         cwafunction $NAME
 
     # For Debian [debian] and Ubuntu [ubuntu]
@@ -94,7 +94,7 @@ then
     # For RHEL [redhat]
     elif [[ $PLATFORM == "rhel" ]]
     then
-        NAME="radhat"
+        NAME="redhat"
         cwafunction $NAME
 
     # For Ubuntu [ubuntu]
