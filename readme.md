@@ -7,8 +7,8 @@
 > + The script is tested on the following architecture and only works on the following OS : 
 >
 >    > ```
->    > x86_64 (amd64): Amazon Linux 2, Amazon Linux 2023, SLES, RHEL, Ubuntu, Debian
->    > aarch64 (arm64): Amazon Linux 2, Amazon Linux 2023, SLES, RHEL, Ubuntu
+>    > x86_64 (amd64): Amazon Linux 2, Amazon Linux 2023, SLES 12/15, RHEL 8/9, Ubuntu 20/22/24, Debian
+>    > aarch64 (arm64): Amazon Linux 2, Amazon Linux 2023, SLES 12/15, RHEL 8/9, Ubuntu 20/22/24
 >    > ``` 
 
 #### Prerequisites
